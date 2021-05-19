@@ -2,7 +2,6 @@ import peewee as models
 from app.db.config import db
 import datetime
 
-
 class BaseModel(models.Model):
     """A base model that will use our database."""
     class Meta:
