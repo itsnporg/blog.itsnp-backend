@@ -13,3 +13,14 @@ uvicorn==0.13.4
 uvloop==0.15.2
 watchgod==0.7
 websockets==8.1
+
+# db
+SQLAlchemy==1.4.15
+alembic==1.6.2
+psycopg2-binary==2.8.6
+
+# dev
+flake8==3.9.2
+autopep8==1.5.7
+pytest==6.2.4
+requests==2.25.1
