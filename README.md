@@ -11,3 +11,5 @@ Run App: uvicorn app.main:app --reload
 ```
 
 ### Using peewee ORM. NOT SQLAlchemy
+
+<!-- FastAPI is Fun. -->
