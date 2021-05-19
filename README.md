@@ -10,4 +10,4 @@ Run App: uvicorn app.main:app --reload
 
 ```
 
-## Using peewee ORM. NOT SQLAlchemy
+### Using peewee ORM. NOT SQLAlchemy
