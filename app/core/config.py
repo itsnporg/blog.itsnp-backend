@@ -3,7 +3,7 @@ from pydantic import BaseSettings, validator, AnyHttpUrl
 
 
 class Settings(BaseSettings):
-    API_V1_STR: str = "/api/v1"  # for api versioning
+    API_PREFIX: str = "/api"
 
     # SERVER_NAME: str
     # SERVER_HOST: AnyHttpUrl
