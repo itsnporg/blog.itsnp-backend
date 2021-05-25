@@ -38,7 +38,6 @@ class AuthenticationManager:
     @classmethod
     def only_authorized_user(cls, credentials: HTTPAuthorizationCredentials = Depends(jwtBearerAuth)) -> "AuthenticationManager":
         self = cls()
-        print(credentials.credentials)
         self.authenticate_user_with_token(credentials.credentials)
         return self
 
