@@ -27,6 +27,10 @@ class Settings(BaseSettings):
     POSTGRES_PORT: str
     SQLALCHEMY_DATABASE_URI: Optional[str] = None
 
+    SECRET_KEY: str
+    ALGORITHM: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int
+
     @validator("SQLALCHEMY_DATABASE_URI", pre=True)
     def assemble_db_connection(cls, v: Optional[str], values: Dict[str, Any]) -> Any:
         if isinstance(v, str):
@@ -36,7 +40,6 @@ class Settings(BaseSettings):
         P_Server = values.get('POSTGRES_SERVER')
         P_Port = values.get('POSTGRES_PORT')
         P_Db = values.get('POSTGRES_DB')
-
         return f"postgresql://{P_User}:{P_Password}@{P_Server}:{P_Port}/{P_Db}"
 
     class Config:

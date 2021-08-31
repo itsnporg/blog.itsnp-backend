@@ -13,6 +13,9 @@ alembic = "==1.6.2"
 psycopg2-binary = "==2.8.6"
 python-dotenv = "==0.17.1"
 requests = "==2.25.1"
+python-jose = {extras = ["cryptography"], version = "*"}
+passlib = {extras = ["bcrypt"], version = "*"}
+email-validator = "*"
 
 [dev-packages]
 flake8 = "==3.9.2"
